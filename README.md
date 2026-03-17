@@ -99,7 +99,7 @@ hypertension_app/
 
 ### 1. Clone the repo
 ```bash
-git clone https://github.com/yourusername/carecompanion.git
+git clone https://github.com/Parth1234-lgtm/hypertension_app.git
 cd carecompanion
 ```
 
