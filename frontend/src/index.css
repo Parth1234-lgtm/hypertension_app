@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap');
+
+:root {
+  --dark-green: #0A3323;
+  --moss-green: #839958;
+  --beige: #F7F4D5;
+  --rosy: #D3968C;
+  --midnight: #105666;
+  --white: #FFFFFF;
+  --card-bg: #FDFCF3;
+  --border: #E2DFB8;
+  --text-primary: #0A3323;
+  --text-secondary: #4a6741;
+  --text-muted: #839958;
+  --shadow: 0 2px 16px rgba(10,51,35,0.08);
+  --radius: 16px;
+  --radius-sm: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background-color: var(--beige);
+  color: var(--text-primary);
+  min-height: 100vh;
+}
+
+h1, h2, h3 {
+  font-family: 'DM Serif Display', serif;
+}
+
+/* scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--beige); }
+::-webkit-scrollbar-thumb { background: var(--moss-green); border-radius: 3px; }
