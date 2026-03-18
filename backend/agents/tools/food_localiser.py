@@ -33,7 +33,7 @@ def food_localiser_tool(
     potassium_mg_min: str,
     dietary_restrictions: str,
     meal_type: str,
-    top_n: Optional[int] = 3
+    top_n: Optional[str] = "3"
 ) -> str:
     """
     Given nutritional targets and dietary restrictions, returns the best
@@ -51,6 +51,7 @@ def food_localiser_tool(
     """
     sodium_mg_max = int(sodium_mg_max)
     potassium_mg_min = int(potassium_mg_min)
+    top_n = int(top_n) if top_n else 3
     restrictions = [r.strip().lower() for r in dietary_restrictions.split(",")]
     results = []
 

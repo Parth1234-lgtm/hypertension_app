@@ -336,7 +336,7 @@ def quick_refresh(req: RunCycleRequest):
         {"patient_id": req.patient_id},
         {"$set": {"avatar_state": avatar, "last_updated": datetime.now(timezone.utc)}}
     )
-    print(f"Quick refresh done — risk: {risk_result.get('value')}, avatar: {avatar['mood']}")
+    print(f"✅ Quick refresh done — risk: {risk_result.get('value')}, avatar: {avatar['mood']}")
     return {
         "success": True,
         "risk_score": risk_result.get("value"),
@@ -417,4 +417,4 @@ def recompute_habits(patient_id: str):
             "last_updated": datetime.now(timezone.utc)
         }}
     )
-    print(f"Habits recomputed — med: {med_adherence}, exercise: {exercise_adherence}, diet: {diet_adherence}")
+    print(f"✅ Habits recomputed — med: {med_adherence}, exercise: {exercise_adherence}, diet: {diet_adherence}")
